@@ -10,6 +10,25 @@ body {
   font-family: "Lusitana";
 }
 
+/*Mobil font*/
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.375rem; /* 22px */
+}
+
+h3 {
+  font-size: 1.125rem; /* 18px */
+}
+
+p,
+nav a {
+  font-size: 0.9375rem;
+}
+
 /*Full size font*/
 @media (min-width: 768px) {
   h1 {
@@ -28,23 +47,4 @@ body {
   nav a {
     font-size: 1rem;
   }
-}
-
-/*Mobil font*/
-
-h1 {
-  font-size: 1.75rem;
-}
-
-h2 {
-  font-size: 1.375rem; /* 22px */
-}
-
-h3 {
-  font-size: 1.125rem; /* 18px */
-}
-
-p,
-nav a {
-  font-size: 0.9375rem;
 }
