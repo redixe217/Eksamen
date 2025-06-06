@@ -13,7 +13,7 @@ body {
 /*Mobil font*/
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 h2 {
@@ -32,7 +32,7 @@ nav a {
 /*Full size font*/
 @media (min-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   h2 {
@@ -43,8 +43,11 @@ nav a {
     font-size: 1.25rem;
   }
 
-  p,
-  nav a {
+  p {
     font-size: 1rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
   }
 }
