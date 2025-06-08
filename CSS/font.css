@@ -24,9 +24,12 @@ h3 {
   font-size: 1.125rem; /* 18px */
 }
 
-p,
+p {
+  font-size: 1rem;
+}
+
 nav a {
-  font-size: 0.9375rem;
+  font-size: 1.25rem;
 }
 
 /*Full size font*/
