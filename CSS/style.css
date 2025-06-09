@@ -129,9 +129,14 @@ body.index_img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .h1_index {
+  user-select: none;
+}
+
+.h2_index {
   user-select: none;
 }
 
