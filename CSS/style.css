@@ -99,6 +99,7 @@ nav.active .menu {
   height: 60px;
   width: auto;
   display: block;
+  user-select: none;
 }
 
 nav {
