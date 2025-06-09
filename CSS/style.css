@@ -96,7 +96,7 @@ nav.active .menu {
 }
 
 .logo {
-  height: 60px;
+  height: 42px;
   width: auto;
   display: block;
   user-select: none;
@@ -157,10 +157,29 @@ body.index_img {
   padding: 10px;
 }
 
+.about_text {
+  margin-bottom: 8px;
+}
+
 .profile_img {
-  max-width: 300px;
+  max-width: 400px;
   margin: 0 auto;
   padding-top: 4px;
+}
+
+.column {
+  border: #000 solid 1px;
+  margin-bottom: 10px;
+}
+
+.column ul {
+  list-style: none;
+  margin-left: 14px;
+  margin-bottom: 4px;
+}
+
+.column h3 {
+  margin-left: 4px;
 }
 
 .footer_text {
@@ -169,19 +188,11 @@ body.index_img {
   position: relative;
 }
 
-/* .about_fyld {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-main {
-  flex-grow: 1;
-  
-} */
-
 @media (min-width: 1000px) {
+  .logo {
+    height: 60px;
+  }
+
   .project_section {
     max-width: 1200px;
     margin: 0 auto;
@@ -225,26 +236,54 @@ main {
 
   .section_about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    max-width: 750px;
+    grid-template-columns: 2fr 1fr;
+    gap: 2em;
+    max-width: 1250px;
     justify-content: center;
+    align-items: stretch; /* så billede og tekst får samme højde */
     margin: 0 auto;
     padding-top: 100px;
   }
 
   .about_text {
-    max-width: 400px;
     margin: 0 auto;
   }
 
   .profile_img {
-    grid-row: 2/1;
-    margin: 0 auto;
     width: 100%;
-    max-width: 350px;
+    max-width: none;
+    margin: 0 auto;
     height: auto;
     display: block;
+    align-self: stretch;
+    object-fit: cover;
+  }
+
+  .about_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .about_lists {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .column {
+    flex: 1 1 0;
+    border: #000 solid 1px;
+  }
+
+  .column ul {
+    list-style: none;
+    margin-left: 14px;
+    margin-bottom: 4px;
+  }
+
+  .column h3 {
+    margin-left: 4px;
   }
 }
 
