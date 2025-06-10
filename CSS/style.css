@@ -1,3 +1,4 @@
+/* Grund styles start */
 html,
 body {
   height: 100%;
@@ -26,6 +27,9 @@ a {
   text-decoration: none;
 }
 
+/* Grund styles slut */
+
+/* Menu start */
 header {
   height: 70px;
   width: 100%;
@@ -93,6 +97,9 @@ nav ul {
   list-style: none;
 }
 
+/* Menu slut */
+
+/* Index start */
 body.index_img {
   min-height: 100vh;
   background: url(../images/index_img_desktop.webp) no-repeat center center;
@@ -118,6 +125,9 @@ body.index_img {
   user-select: none;
 }
 
+/* Index slut */
+
+/* Portfoile start */
 .link_to_temas {
   border: #000 solid 1px;
   padding: 6px;
@@ -129,14 +139,13 @@ body.index_img {
   padding: 20px 10px 22px 10px;
 }
 
-.ul_projekt {
-  padding-left: 16px;
-}
-
 .video_style {
   max-width: 380px;
 }
 
+/* Portfoile slut */
+
+/* About start */
 .section_about {
   padding: 10px;
 }
@@ -166,6 +175,9 @@ body.index_img {
   margin-left: 4px;
 }
 
+/* About slut */
+
+/* Footer*/
 .footer_text {
   text-align: center;
   padding-top: 10px;
@@ -173,10 +185,12 @@ body.index_img {
 }
 
 @media (min-width: 1000px) {
+  /* Menu */
   .logo {
     height: 60px;
   }
 
+  /* Portfoile start */
   .project_section {
     max-width: 1200px;
     margin: 0 auto;
@@ -214,21 +228,19 @@ body.index_img {
     max-width: 800px;
   }
 
-  .ul_projekt {
-    padding-left: 16px;
-  }
-
   .section_about {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding-top: 100px;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2em;
-    max-width: 1250px;
     justify-content: center;
-    align-items: stretch; /* så billede og tekst får samme højde */
-    margin: 0 auto;
-    padding-top: 100px;
+    align-items: stretch;
   }
+  /* Portfoile slut */
 
+  /* About start */
   .about_text {
     margin: 0 auto;
   }
@@ -250,9 +262,9 @@ body.index_img {
   }
 
   .about_lists {
+    margin-top: 2rem;
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
   }
 
   .column {
@@ -261,17 +273,19 @@ body.index_img {
   }
 
   .column ul {
-    list-style: none;
     margin-left: 14px;
     margin-bottom: 4px;
+    list-style: none;
   }
 
   .column h3 {
     margin-left: 4px;
   }
+  /* About slut */
 }
 
 @media screen and (max-width: 860px) and (min-width: 300px) {
+  /* Manu*/
   .menu {
     display: none;
   }
