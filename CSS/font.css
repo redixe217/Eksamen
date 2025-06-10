@@ -1,11 +1,14 @@
 @font-face {
   font-family: "Lusitana";
-  src: url(../fonts/Lusitana-Regular.ttf);
+  src: url(../fonts/Lusitana.woff2) format("woff2"),
+    url(../fonts/Lusitana.woff) format("woff"),
+    url(../fonts/Lusitana-Regular.ttf) format("truetype");
 }
-
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url(../fonts/Montserrat-Regular.ttf);
+  src: url(../fonts/Montserrat-Regular.woff2) format("woff2"),
+    url(../fonts/Montserrat-Regular.woff) format("woff"),
+    url(../fonts/Montserrat-Regular.ttf) format("truetype");
 }
 
 h1,

@@ -1,14 +1,14 @@
-const mobilmenu = document.querySelector(".mobilmenu");
+const menu_mobile = document.querySelector(".menu_mobile");
 const nav = document.querySelector("nav");
 const menu = document.querySelector(".menu");
 
-mobilmenu.addEventListener("click", mobilmenuClick);
+menu_mobile.addEventListener("click", mobilmenuClick);
 function mobilmenuClick() {
-    mobilmenu.classList.toggle("active");
+    menu_mobile.classList.toggle("active");
   nav.classList.toggle("active");
 }
 menu.addEventListener("click", menuClick);
 function menuClick() {
-  mobilmenu.classList.remove("active");
+  menu_mobile.classList.remove("active");
   nav.classList.remove("active");
 }
